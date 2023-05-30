@@ -15,7 +15,7 @@ jobs:
     steps:
       - id: read-docker-image-identifiers
         name: Read Docker Image Identifiers
-        run: echo "img_name=${{ secrets.DOCKERHUB_USERNAME }}/srst2env" >> "$GITHUB_ENV"
+        run: echo "img_name=${{ secrets.DOCKERHUB_USERNAME }}/coveragecalculatorenv" >> "$GITHUB_ENV"
       -
         name: Set up QEMU
         uses: docker/setup-qemu-action@v2
